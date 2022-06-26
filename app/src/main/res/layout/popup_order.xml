@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_border"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="NAMA PRODUK"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/total"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Jumlah" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ice"
+                android:layout_width="wrap_content"
+                android:backgroundTint="@color/grey_font"
+                android:layout_height="wrap_content"
+                android:text="Es" />
+
+            <Button
+                android:id="@+id/hangat"
+                android:layout_marginStart="16dp"
+                android:layout_width="wrap_content"
+                android:backgroundTint="@color/grey_font"
+                android:layout_height="wrap_content"
+                android:text="Hangat" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/keteranganTambahan"
+                android:hint="Keterangan Tambahan" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:textColor="@color/black"
+            android:id="@+id/priceFinalTv"
+            android:layout_marginTop="10dp"
+            android:text="Total: Rp. -" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/orderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="0.5"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:text="Tambah Keranjang" />
+
+        <Button
+            android:id="@+id/dismissBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="0.5"
+            android:textAllCaps="false"
+            android:text="Batal" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

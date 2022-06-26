@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BUAH-Q</string>
+    <string name="image" />
+    <string name="button">button</string>
+
+    <string-array name="year">
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+    </string-array>
+
+</resources>
